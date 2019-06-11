@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<package name="strutsqs" extends="struts-default" namespace="/" >
+		<action name="GoLogin" class="com.action.GoLogin">
+			<result name="input">/Login.jsp</result>
+			<result name="success">/Index.jsp</result>
+		</action>
+		<action name="Quit" class="com.action.Quit">
+			<result name="success">/Login.jsp</result>
+		</action>
+		<action name="PasswordUpdateSave" class="com.action.PasswordUpdateSave">
+			<result name="input">/PasswordUpdate.jsp</result>
+		</action>
+		
+		<action name="TeacherManager" class="com.action.TeacherManager">
+			<result name="success">/TeacherManager.jsp</result>
+		</action>
+		<action name="TeacherAddSave" class="com.action.TeacherAddSave">
+		</action>
+		<action name="TeacherUpdate" class="com.action.TeacherUpdate">
+		    <result name="success">/TeacherUpdate.jsp</result>
+		</action>
+		<action name="TeacherUpdateSave" class="com.action.TeacherUpdateSave">
+		</action>
+		<action name="TeacherDel" class="com.action.TeacherDel">
+		</action>
+		
+		<action name="StudentManager" class="com.action.StudentManager">
+			<result name="success">/StudentManager.jsp</result>
+		</action>
+		<action name="StudentUpdate" class="com.action.StudentUpdate">
+		    <result name="success">/StudentUpdate.jsp</result>
+		</action>
+		<action name="StudentUpdateSave" class="com.action.StudentUpdateSave">
+		</action>
+		<action name="StudentDel" class="com.action.StudentDel">
+		  <result name="success" type="chain">StudentManager</result>
+		</action>
+		
+		<action name="BuildingManager" class="com.action.BuildingManager">
+			<result name="success">/BuildingManager.jsp</result>
+		</action>
+		<action name="BuildingAddSave" class="com.action.BuildingAddSave">
+		</action>
+		<action name="BuildingUpdate" class="com.action.BuildingUpdate">
+		    <result name="success">/BuildingUpdate.jsp</result>
+		</action>
+		<action name="BuildingUpdateSave" class="com.action.BuildingUpdateSave">
+		</action>
+		<action name="BuildingDel" class="com.action.BuildingDel">
+		  <result name="success" type="chain">BuildingManager</result>
+		</action>
+		
+		<action name="DormitoryAdd" class="com.action.DormitoryAdd">
+			<result name="success">/DormitoryAdd.jsp</result>
+		</action>
+		<action name="DormitoryManager" class="com.action.DormitoryManager">
+			<result name="success">/DormitoryManager.jsp</result>
+		</action>
+		<action name="DormitoryAddSave" class="com.action.DormitoryAddSave">
+		</action>
+		<action name="DormitoryUpdate" class="com.action.DormitoryUpdate">
+		    <result name="success">/DormitoryUpdate.jsp</result>
+		</action>
+		<action name="DormitoryUpdateSave" class="com.action.DormitoryUpdateSave">
+		</action>
+		<action name="DormitoryDel" class="com.action.DormitoryDel">
+		  <result name="success" type="chain">DormitoryManager</result>
+		</action>
+		
+		<action name="StudentRZ" class="com.action.StudentRZ">
+			<result name="success">/StudentRZ.jsp</result>
+		</action>
+		<action name="StudentRZSave" class="com.action.StudentRZSave">
+		</action>
+		<action name="StudentDH" class="com.action.StudentDH">
+			<result name="success">/StudentDH2.jsp</result>
+		</action>
+		<action name="StudentDHSave" class="com.action.StudentDHSave">
+		</action>
+		<action name="StudentQC" class="com.action.StudentQC">
+			<result name="success">/StudentQC2.jsp</result>
+		</action>
+		<action name="StudentQCSave" class="com.action.StudentQCSave">
+		</action>
+		
+		<action name="TBManager" class="com.action.TBManager">
+			<result name="success">/TBManager.jsp</result>
+		</action>
+		<action name="TBAddSave" class="com.action.TBAddSave">
+		</action>
+		<action name="TBDel" class="com.action.TBDel">
+		</action>
+		
+		<action name="MyStudent" class="com.action.MyStudent">
+			<result name="success">/MyStudent.jsp</result>
+		</action>
+		<action name="MyStudentList" class="com.action.MyStudentList">
+			<result name="success">/MyStudentList.jsp</result>
+		</action>
+		
+		<action name="LogAdd" class="com.action.LogAdd">
+			<result name="success">/LogAdd.jsp</result>
+		</action>
+		<action name="LogAddSave" class="com.action.LogAddSave">
+		</action>
+		
+		<action name="MyLog" class="com.action.MyLog">
+			<result name="success">/MyLog.jsp</result>
+		</action>
+		<action name="MyLogList" class="com.action.MyLogList">
+			<result name="success">/MyLogList.jsp</result>
+		</action>
+		
+		<action name="StudentLog" class="com.action.StudentLog">
+			<result name="success">/StudentLog.jsp</result>
+		</action>
+		
+		<action name="AdminLog" class="com.action.AdminLog">
+			<result name="success">/AdminLog.jsp</result>
+		</action>
+		<action name="AdminLogList" class="com.action.AdminLogList">
+			<result name="success">/AdminLogList.jsp</result>
+		</action>
+	</package>
+</struts>    
